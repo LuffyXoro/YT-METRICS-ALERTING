@@ -1,0 +1,2 @@
+The project is gonna have real time data abt the yt from cloud using api and will be needed to process it ,
+To add a spice we can notify the progess using telegram bot 
