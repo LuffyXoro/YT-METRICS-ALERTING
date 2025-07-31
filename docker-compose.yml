@@ -18,5 +18,26 @@ services:
     networks: -confluent
 
 
-    broker :configs:
+    broker :
+    image:
+    hostname:
+    container_name:
+    depends_on:
+        zookeeper:
+            condition: service_healthy
+    ports:
+        - "9092:9092"
+        - "9101.•9101"
+    environment :
+        KAFKA-BROKER_ID: 1
+        KAFKA_ZOOKEEPER_CONNECT.
+        • 'zookeeper: 2181'
+        KAFKA
+        -ADVERTISED-LISTENERS:
+            METRIC _ REPORTERS: io.conftuent.metrics. reporter. ConfluentMetricsReporter
+        KAFKA _
+        KAFKA_GROUP-INITIAL-REBALANCE-DELAY-MS: O
+        KAFKA
+
+
     
